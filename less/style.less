@@ -1,0 +1,165 @@
+/* Цвета */
+@header-bg: rgba(31, 59, 160, 0.65);
+
+/* Общие свойства */
+h1{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 48px;
+   line-height: 56px;
+}
+h3{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 28px;
+}
+h6{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 21px;
+}
+p{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+
+/* Шапка с контактами */
+.travel-info{
+   background-color: @header-bg;
+   height: 60px;
+}
+.travel-social{
+   height: 60px;
+   text-align: center;
+   &_place{
+      &::before{
+         content: '';
+         display: inline-block;
+         width: 21px;
+         height: 30px;
+         background: url(../img/head-info/place.png);
+         background-size: cover;
+         margin-right: 26px;
+         vertical-align: -20%;
+      }
+   }
+   &_phone{
+      &::before{
+         content: '';
+         display: inline-block;
+         width: 24px;
+         height: 24px;
+         background: url(../img/head-info/tephone.png);
+         background-size: cover;
+         margin-right: 26px;
+         vertical-align: -20%;
+      }
+   }
+}
+
+/* Блок с логотипом */
+.travel-header{
+   background: url(../img/header-bg-1.jpg) center top /cover no-repeat;
+   &_logo{
+      text-align: right;
+      margin-top: 72px;
+   }
+   &_title{
+      margin-top: 80px;
+   }
+   &_button{
+      width: 186px;
+      height: 40px;
+      background: rgba(37, 204, 174, 0.3);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(2px);
+      border-radius: 2px;
+      margin: 88px 0 72px 0;
+      color: #FFFFFF;
+   }
+}
+/* Блок с карточками */
+.bg-filter{
+   background-color: rgba(37, 204, 174, 0.3);
+}
+
+.travel-filter{
+   &_title{
+      margin: 19px 0 31px 0;
+   }
+   &_button{
+      background: rgba(130, 157, 255, 0.65);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(2px);
+      border-radius: 2px;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      margin-bottom: 8px;
+   }
+}
+
+/* Карточка тип M */
+.card-box-m{
+   margin-top: 31px;
+   position: relative;
+   width: 300px;
+   height: 274px;
+   background: linear-gradient(to top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url(../img/cart/Frame\ 65.png) center center /cover no-repeat;
+   box-shadow: 0px 0px 11px rgba(0, 15, 53, 0.14);
+   display: flex;
+   flex-direction:column;
+   justify-content:space-between;
+   text-align: center;
+   align-items:center;
+   h3{
+      margin-top: 54px;
+   }
+   &_like{
+      position: absolute;
+      top: 13px;
+      right: 19px;
+   }
+   &_button{
+      margin: 0 0 33px 0;
+   }  
+}
+
+/* Карточка тип L */
+.card-box-l{
+   margin-top: 31px;
+   position: relative;
+   width: 300px;
+   height: 460px;
+   background: linear-gradient(to top, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url(../img/cart/Frame7.png) center center /cover no-repeat;
+   box-shadow: 0px 0px 11px rgba(0, 15, 53, 0.14);
+   display: flex;
+   flex-direction:column;
+   justify-content:space-between;
+   text-align: center;
+   align-items:center;
+   h3{
+      margin-top: 240px;
+   }
+   &_like{
+      position: absolute;
+      top: 13px;
+      right: 19px;
+   }
+   &_button{
+      margin: 0 0 33px 0;
+   }  
+}
+.card-falsh{
+   height: 40px;
+}
+
+
